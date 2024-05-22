@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Git Potato",
+  "description": "Sort git files in different orders without a folder based structure",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "icons": {
+    "16": "icons/potato.png",
+    "32": "icons/potato.png",
+    "48": "icons/potato.png",
+    "128": "icons/potato.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/potato.png",
+      "32": "icons/potato.png",
+      "48": "icons/potato.png",
+      "128": "icons/potato.png"
+    },
+    "permissions": ["tabs", "activeTab", "storage"],
+    "default_popup": "./popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["tree-sitter.js", "content.js"],
+      "matches": ["*://github.com/*"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["tree-sitter.wasm", "tree-sitter-javascritp.wasm", "tree-sitter.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
