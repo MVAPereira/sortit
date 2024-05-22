@@ -8,7 +8,7 @@ It enhances the GitHub pull request review page by providing additional options 
 ![Application Screenshot](https://github.com/MVAPereira/sortit/blob/main/sortit.png)
 
 
-Although two buttons "Test first" and "Most changed files" have clear functions, the "Absolutely nothing" button acts by sensing the changes made by the first or second button, rendering the page the initial check.
+Although two buttons “Test first” and “Most changed files” have clear functions, the “Absolutely nothing” button acts by canceling the changes made by the first or second button, returning the page to its initial state.
 
 ## Webpack
 
