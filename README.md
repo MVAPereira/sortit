@@ -8,6 +8,8 @@ It enhances the GitHub pull request review page by providing additional options 
 ![Application Screenshot](https://github.com/MVAPereira/sortit/blob/main/sortit.png)
 
 
+Although two buttons "Test first" and "Most changed files" have clear functions, the "Absolutely nothing" button acts by sensing the changes made by the first or second button, rendering the page the initial check.
+
 ## Webpack
 
 In this boilerplate, Webpack is configured to take src/index.js as the entry point and output the bundle to content.js. This means that all the JavaScript code written in src/index.js as well as any dependencies imported into that file will be bundled together into a single file called content.js.
