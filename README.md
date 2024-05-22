@@ -12,7 +12,7 @@ It enhances the GitHub pull request review page by providing additional options 
 
 In this boilerplate, Webpack is configured to take src/index.js as the entry point and output the bundle to content.js. This means that all the JavaScript code written in src/index.js as well as any dependencies imported into that file will be bundled together into a single file called content.js.
 
-## Running localy
+## Running locally
 
 Once the “extension” folder is loaded in your c'hrome browser, you need to run one of the following commands so that the changes can be translated to content.js.
 
