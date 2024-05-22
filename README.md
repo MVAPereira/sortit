@@ -5,7 +5,7 @@ This extension was created based on a ready-made boilerplate template.
 It enhances the GitHub pull request review page by providing additional options for displaying files beyond the default alphabetical order. It features a simple popup interface for easy manipulation.
 
 ```
-![Application Screenshot](sortit.png)
+![Application Screenshot](https://github.com/MVAPereira/sortit/blob/main/sortit.png)
 ```
 
 ## Webpack
